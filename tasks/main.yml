@@ -1,0 +1,8 @@
+---
+- name: Install Phing.
+  become: yes
+  get_url:
+    url: https://www.phing.info/get/phing-latest.phar
+    dest: /usr/local/bin/phing
+    mode: 0755
+    force: yes
